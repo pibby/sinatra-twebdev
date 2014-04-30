@@ -1,0 +1,36 @@
+doctype html
+html
+	head
+		meta charset="utf-8"
+		meta content="IE=edge" http-equiv="X-UA-Compatible"
+		title Twitter: Front-End Web Development Topics
+		link rel="stylesheet" media="screen" href="/style.css"
+		meta name="keywords" content="twitter,rwd,frontend,webdev,responsive,css,webperf,ux,accessibility,gruntjs,ruby,tmux,vim"
+		meta content="width=device-width,initial-scale=1" name="viewport"
+		meta name="author" content="Katie Harron - @pibby @buildtheweb"
+		meta name="google-site-verification" content="E_JPobPTDgTUQ5LT9XsljHqEw4sO8X5vuym5QYq0ze4"
+	body
+		.grid
+			h1 Front-End Web Development Topics
+			h2
+				|Lovingly 
+				a [href="http://github.com/pibby/sinatra-twebdev"] crafted
+				|&nbsp;by Katie Harron 
+				a [href="https://twitter.com/pibby"] @pibby
+				|&nbsp;/&nbsp;
+				a [href="https://twitter.com/buildtheweb"] @buildtheweb
+
+			== yield
+
+		/ Google Analytics
+	    javascript:
+	      var _gaq = _gaq || [];
+	      _gaq.push(['_setAccount', 'UA-292561-8']);
+	      _gaq.push(['_setDomainName', 'twebdev.herokuapp.com']);
+	      _gaq.push(['_trackPageview']);
+
+	      (function() {
+	        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	      })();

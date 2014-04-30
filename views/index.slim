@@ -1,0 +1,9 @@
+- $topics.each do |topic|
+	.col-1
+		h3 =topic
+		ul.topic
+			- search(topic).each do |tweet|
+				li
+					p ==auto_link(tweet.text, :username_include_symbol => true, :target_blank => true)
+					a href="#{tweet.uri}" target="_blank" @#{tweet.user.screen_name}
+					small =Time.parse("#{tweet.created_at}").strftime(" at %I:%M%p on %b %d, %Y")
